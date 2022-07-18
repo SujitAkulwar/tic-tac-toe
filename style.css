@@ -25,6 +25,9 @@ ul{
     border: 2vh;
     margin-left: 25%;
     margin-right: 25%;
+    border-style: solid;
+    border: 2vh;
+    border-color: black;
 }
 
 li{
@@ -34,10 +37,6 @@ li{
     align-items: center;
     align-content: center;
     display: flex;
-    border-style: solid;
-    border: 2vh;
-    color: black;
-    background-color: blanchedalmond;
 }
 
 button{
