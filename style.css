@@ -7,27 +7,43 @@
 
 #Head{
     font-size: 8vh;
-    padding: auto;
-    margin: auto;
     text-shadow: 10vh;
-    align-items: center;
-    align-content: center;
     font-weight: 800;
     color: rgb(0, 186, 186);
-    width: 100vh;
-    height: 15vh;
+    width: 50%;
+    height: 10vh;
+    margin-left: 30%;
 }
 
 ul{
-    background-color: rgb(255, 127, 127);
     display: flex;
     align-items: center;
     align-content: center;
     font-weight: 800;
-    color: rgb(0, 186, 186);
-    width: 100vh;
-    height: 10vh;
+    width: 50%;
+    height: 30vh;
+    border: 2vh;
+    margin-left: 25%;
+    margin-right: 25%;
 }
+
 li{
-    
+    background-color: aquamarine;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    border-style: solid;
+    border: 2vh;
+    color: black;
+    background-color: blanchedalmond;
+}
+
+button{
+    gap: 1;
+    font-size: 8vh;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
 }
