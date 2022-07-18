@@ -40,9 +40,10 @@ li{
 }
 
 button{
-    gap: 1;
-    font-size: 8vh;
+    font-size: 17vh;
     height: 20vh;
     width: 20vh;
     display: flex;
+    align-items: center;
+    padding-left: 4vh;
 }
