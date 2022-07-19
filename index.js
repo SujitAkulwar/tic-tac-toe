@@ -2,16 +2,7 @@ let counter = 0;
 let arr = [0,1,2,3,4,5,6,7,8]; 
 const question = [1,1,1,1,1,1,1,1,1];
 
-const win = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6]
-];
+const winnercheck =[0,0,0,0,0,0,0,0,0];
 
 function turn(){
     if(counter%2 == 0){
@@ -24,7 +15,7 @@ function turn(){
 
 function check(){
     for (let i = 0; i < 8; i++) {
-        if(win[i,0] == document.getElementById(win[i,0]) && win[i,1] == document.getElementById(win[i,1]) && win[i,2] == document.getElementById(win[i,2])){
+        if(winnercheck[0]==winnercheck[1]==winnercheck[2] || winnercheck[3]==winnercheck[4]==winnercheck[5] || winnercheck[6]==winnercheck[7]==winnercheck[8] || winnercheck[0]==winnercheck[3]==winnercheck[6] || winnercheck[1]==winnercheck[4]==winnercheck[7] || winnercheck[2]==winnercheck[5]==winnercheck[8] || winnercheck[0]==winnercheck[4]==winnercheck[8] || winnercheck[2]==winnercheck[4]==winnercheck[6]){
             if(counter%2 == 0){
                 document.getElementById('player').innerHTML = "player_1 is winner";
             }
