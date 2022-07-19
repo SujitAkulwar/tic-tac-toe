@@ -1,13 +1,10 @@
 let counter = 0;
+let arr = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]; 
+
+function check(){
+
+}
+
 function fun00(){
-    var val = document.getElementById('00').value; 
-    if(val == '?'){
-        if(counter % 2 == 0){
-            document.getElementById('00').innerHTML = 'X';
-        }
-        else{
-            document.getElementById('00').innerHTML = '0';
-        }
-        counter++;
-    }
+    
 }
