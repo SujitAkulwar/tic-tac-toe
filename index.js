@@ -15,7 +15,7 @@ function turn(){
 
 function check(){
     for (let i = 0; i < 8; i++) {
-        if(winnercheck[0]==winnercheck[1]==winnercheck[2] || winnercheck[3]==winnercheck[4]==winnercheck[5] || winnercheck[6]==winnercheck[7]==winnercheck[8] || winnercheck[0]==winnercheck[3]==winnercheck[6] || winnercheck[1]==winnercheck[4]==winnercheck[7] || winnercheck[2]==winnercheck[5]==winnercheck[8] || winnercheck[0]==winnercheck[4]==winnercheck[8] || winnercheck[2]==winnercheck[4]==winnercheck[6]){
+        if((winnercheck[0]==winnercheck[1] && winnercheck[1]==winnercheck[2]) || (winnercheck[3]==winnercheck[4] && winnercheck[4]==winnercheck[5]) || (winnercheck[6]==winnercheck[7] && winnercheck[7]==winnercheck[8]) || (winnercheck[0]==winnercheck[3] && winnercheck[3]==winnercheck[6]) || (winnercheck[1]==winnercheck[4] && winnercheck[4]==winnercheck[7]) || (winnercheck[2]==winnercheck[5] && winnercheck[5]==winnercheck[8]) || (winnercheck[0]==winnercheck[4] && winnercheck[4]==winnercheck[8]) || (winnercheck[2]==winnercheck[4] && winnercheck[4]==winnercheck[6])){
             if(counter%2 == 0){
                 document.getElementById('player').innerHTML = "player_1 is winner";
             }
@@ -30,9 +30,11 @@ function fun0(){
     if(question[0] == 1){
         if(counter%2 == 0){
             document.getElementById('0').innerHTML = 'X';
+            winnercheck = 1;
         }
         else{
             document.getElementById('0').innerHTML = '0';
+            winnercheck = 2;
         }
         turn();
         check();
