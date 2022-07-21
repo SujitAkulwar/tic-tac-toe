@@ -23,7 +23,7 @@ function check(){
                 document.getElementById('player').innerHTML = "player_2 is winner";
             }
             for(let j = 0 ; j < 9 ; j++){
-                question[i]=5;
+                question[i]=2;
             }
         }
     }
