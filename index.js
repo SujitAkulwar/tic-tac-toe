@@ -14,13 +14,16 @@ function turn(){
 }
 
 function check(){
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 9; i++) {
         if((winnercheck[0]==winnercheck[1] && winnercheck[1]==winnercheck[2]) || (winnercheck[3]==winnercheck[4] && winnercheck[4]==winnercheck[5]) || (winnercheck[6]==winnercheck[7] && winnercheck[7]==winnercheck[8]) || (winnercheck[0]==winnercheck[3] && winnercheck[3]==winnercheck[6]) || (winnercheck[1]==winnercheck[4] && winnercheck[4]==winnercheck[7]) || (winnercheck[2]==winnercheck[5] && winnercheck[5]==winnercheck[8]) || (winnercheck[0]==winnercheck[4] && winnercheck[4]==winnercheck[8]) || (winnercheck[2]==winnercheck[4] && winnercheck[4]==winnercheck[6])){
             if(counter%2 == 1){
                 document.getElementById('player').innerHTML = "player_1 is winner";
             }
             else{
                 document.getElementById('player').innerHTML = "player_2 is winner";
+            }
+            for(let j = 0 ; j < 9 ; j++){
+                question[i]=5;
             }
         }
     }
