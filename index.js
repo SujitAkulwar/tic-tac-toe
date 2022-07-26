@@ -11,6 +11,9 @@ function turn(){
     else{
         document.getElementById('player').innerHTML = "player_2's turn";
     }
+    if(counter==9){
+        document.getElementById('player').innerHTML = "Draw !!!";
+    }
 }
 
 function check(){
